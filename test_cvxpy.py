@@ -11,5 +11,6 @@ obj = cvx.Minimize((x-y)**2)
 prob = cvx.Problem(obj, constrains)
 prob.solve()
 
+print(prob.status)
 print(prob.value)
 print(x.value, y.value)
